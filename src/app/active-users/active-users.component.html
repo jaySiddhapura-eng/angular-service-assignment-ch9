@@ -2,7 +2,7 @@
 <ul class="list-group">
   <li
     class="list-group-item"
-    *ngFor="let user of users; let id = index"> <!--this renders all the active users-->
+    *ngFor="let user of users; let id = index"> <!--this renders all the active users--><!--also assigning index of an array to the variable id-->
     {{ user }} | <a href="#" (click)="onSetToInactive(id)">Set to Inactive</a>
   </li>
 </ul>
