@@ -1,27 +1,47 @@
-# MyFirstApp
+# Service Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+## Assignment Requirement
 
-## Development server
+1. Create a page which have two main sections
+2. section 1: active users
+3. section 2 : inactive users
+4. There should be at least 3 users in total
+5. each user should displayed by the name and accompanied with the button
+6. The button of each user should either be shown as  ```set to active``` or ```set to inactive```
+7. The text on button should change according to the location of user
+   1. If user is in active mode then the text of button should be ```set to inactive```
+   2. If user is in inactive mode then the text of button should be ```set to active```
+8. When ```set to active``` button of certain user is pressed, then the user should be moved from ```inactive users section ``` to the ```active users section``` and same with other way around
+9. By default all the users should be inactive and shown in ```inactive users section```
+10. Please use services to achieve the implementation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![assignment](assets/assignment.PNG)
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+~~~typescript
+ src
+  └── app
+      ├── active-users
+      │   ├── active-users.component.ts
+      │   ├── active-users.component.html
+      │   └── active-users.component.css
+      ├── inactive-users
+      │   ├── inactive-users.component.ts
+      │   ├── inactive-users.component.html
+      │   └── inactive-users.component.css
+      ├── app.component.ts
+      ├── app.component.html
+      ├── app.component.css
+      ├── app.module.ts
+      ├── counter.service.ts
+      └── users.service.ts
+~~~
 
-## Build
+## Service to Service Injection
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![serviceToservice](assets/serviceToService.PNG)
 
-## Running unit tests
+## Service to Component Injection
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![serviceToComponent](assets/serviceToComponent.PNG)
