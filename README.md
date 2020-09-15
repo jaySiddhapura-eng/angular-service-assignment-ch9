@@ -1,5 +1,11 @@
 # Service Assignment
 
+## Table of Contents  
+* [Assignment Requirement](#Assignment-Requirement)<br>
+* [Project Structure](#Project-Structure)<br>
+* [Service to Service Injection](#Service-to-Service-Injection)<br>
+* [Service to Component Injection](#Service-to-Component-Injection)<br>
+
 ## Assignment Requirement
 
 1. Create a page which have two main sections
